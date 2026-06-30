@@ -5,7 +5,7 @@ An interactive web app for comparing how companies' stocks have grown over time,
 what an investment would be worth today. Built with [Streamlit](https://streamlit.io) and
 [Plotly](https://plotly.com), and driven end-to-end through Claude using MCP "skill packs."
 
-**🌐 Live app:** _<add your Streamlit Cloud link here>_
+**🌐 Live app:** https://stock-explorer-adam.streamlit.app/
 
 ---
 
