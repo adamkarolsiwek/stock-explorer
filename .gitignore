@@ -1,0 +1,24 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.Python
+
+# --- Streamlit secrets & local config (keep config.toml, ignore secrets) ---
+.streamlit/secrets.toml
+
+# --- Environment / secrets ---
+.env
+*.env
+secrets.toml
+*.key
+*.pem
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
