@@ -1,0 +1,8 @@
+# Dark theme (charcoal, not pure black) with a purple accent.
+[theme]
+base = "dark"
+primaryColor = "#8B7CF6"
+backgroundColor = "#1A1A26"
+secondaryBackgroundColor = "#262635"
+textColor = "#E8E8EC"
+font = "sans serif"
