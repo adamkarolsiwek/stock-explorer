@@ -216,11 +216,12 @@ if close.empty:
     )
     st.stop()
 
-available = [c for c in chosen if c in close.columns]
-missing = [c for c in chosen if c not in close.columns]
+available = [c for c in chosen if c in close.columns and close[c].notna().any()]
+missing = [c for c in chosen if c not in available]
 if missing:
     st.warning("No data found for: " + ", ".join(missing))
 if not available:
+    st.error("None of the selected tickers returned data for this date range. Try another ticker or a wider range.")
     st.stop()
 close = close[available]
 
