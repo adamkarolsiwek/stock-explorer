@@ -165,10 +165,8 @@ if "portfolio" not in st.session_state:
     st.session_state.portfolio = DEFAULTS.copy()
 
 st.sidebar.header("🔎 Find a stock")
-with st.sidebar.form("search_form", clear_on_submit=False):
-    query = st.text_input("Company name or ticker", placeholder="e.g. Nvidia, Coca-Cola, TSLA")
-    do_search = st.form_submit_button("Search")
-if do_search and query:
+query = st.sidebar.text_input("Company name or ticker", placeholder="e.g. Nvidia, Coca-Cola, TSLA")
+if st.sidebar.button("Search", use_container_width=True) and query:
     st.session_state.results = search_symbols(query)
 
 results = st.session_state.get("results", [])
